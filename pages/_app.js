@@ -1,8 +1,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
-
-import "../styles/globals.css";
 import { Navbar } from "./component/Navbar/Navbar";
 import { ThemeProvider } from "../components/theme-provider";
+import "../styles/globals.css";
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider
