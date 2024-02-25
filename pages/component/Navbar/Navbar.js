@@ -14,7 +14,7 @@ import {
 
  
 import Image from 'next/image';
-export const Navbar = () => {
+ const Navbar = () => {
     const {user} = useUser()
     const { setTheme,resolvedTheme } = useTheme()
   return (
@@ -89,3 +89,4 @@ export const Navbar = () => {
     </div>
   )
 }
+export default Navbar
