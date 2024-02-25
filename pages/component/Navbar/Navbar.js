@@ -1,6 +1,5 @@
 "use client"
 import Link from 'next/link'
-import React from 'react'
 import { UserButton,useUser } from "@clerk/nextjs"; 
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
