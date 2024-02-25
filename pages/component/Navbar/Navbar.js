@@ -12,12 +12,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../../../@/components/ui/dropdown-menu"
-<<<<<<< HEAD:pages/component/Navbar/Navbar.js
 
  
-=======
 import Image from 'next/image';
->>>>>>> d272eb21264f43c38c46256857a68908ee2a4b98:pages/component/Navbar/Navbar.jsx
 export const Navbar = () => {
     const {user} = useUser()
     const { setTheme,resolvedTheme } = useTheme()
@@ -26,7 +23,7 @@ export const Navbar = () => {
         <nav className="bg-white dark:bg-gray-900 fixed w-full  top-0  start-0 border-b border-gray-200 shadow">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link  href={'/'} className="flex items-center ">
-            <Image src={'./Home_logo-removebg-preview.png'} className="w-14 h-14 " alt="Flowbite Logo"/>
+            <Image width={1000} height={1000} src={'/Home_logo-removebg-preview.png'} className="w-14 h-14 " alt="Flowbite Logo"/>
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Home</span>
         </Link>
         <div className="flex items-center md:order-2 space-x-3  rtl:space-x-reverse">
