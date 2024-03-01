@@ -19,7 +19,7 @@ import Image from 'next/image';
     const { setTheme,resolvedTheme } = useTheme()
   return (
     <div>
-        <nav className="bg-white dark:bg-gray-900 fixed w-full  top-0  start-0 border-b border-gray-200 shadow">
+        <nav className="bg-white dark:bg-gray-900 fixed w-full  top-0  z-20 start-0 border-b border-gray-200 shadow">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link  href={'/'} className="flex items-center ">
             <Image width={1000} height={1000} src={'/Home_logo-removebg-preview.png'} className="w-14 h-14 " alt="Flowbite Logo"/>
@@ -34,7 +34,7 @@ import Image from 'next/image';
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className={`' p-3 rounded-sm ${resolvedTheme === 'dark' ? ' bg-slate-950 ':' bg-white '} '`}>
+      <DropdownMenuContent align="end" className={`' p-3 z-20 rounded-sm ${resolvedTheme === 'dark' ? ' bg-slate-950 ':' bg-white '} '`}>
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light
         </DropdownMenuItem>
