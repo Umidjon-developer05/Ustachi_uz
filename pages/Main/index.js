@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import GlobalsApi from '../utils/GlobalsApi';
+import GlobalsApi from '../../utils/GlobalsApi';
 import { Button } from '../../@/components/ui/button';
 
 const Main = () => {
