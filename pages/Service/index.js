@@ -5,7 +5,7 @@ const Service = () => {
     <div
     className='mt-24'
     >
-
+ 
       <Card/>
 
       
