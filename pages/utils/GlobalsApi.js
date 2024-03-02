@@ -34,7 +34,9 @@ const getAllAboutPage = async ()=>{
 
 }
 
-export default {
-    getAllMain,
-    getAllAboutPage
-}
+const GlobalsApi = {
+  getAllMain,
+  getAllAboutPage,
+};
+
+export default GlobalsApi;
