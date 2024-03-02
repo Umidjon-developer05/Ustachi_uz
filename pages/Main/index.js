@@ -28,7 +28,7 @@ const Main = () => {
                 <h1 className='sm:text-[30px] font-serif'>{item?.title}</h1>
                 <p className='sm:text-[17px] text-center'>{item?.description}</p>
                 <Button className='bg-blue-500 hover:bg-blue-700 text-white w-40 font-bold py-2 px-4 rounded'>
-                  Biz bilan bog'lanish
+                  Biz bilan bog&apos;lanish
                 </Button>
               </div>
             ))}
