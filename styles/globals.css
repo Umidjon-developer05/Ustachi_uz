@@ -184,7 +184,6 @@ a {
 }
 
 .profile-card-face {
-  color: #ffffff;
   width: 320px;
   margin: 30px auto;
   transition: all 0.8s ease;
@@ -197,7 +196,6 @@ a {
 }
 
 .profile-card-back {
-  border: 1px solid;
   transform: rotateY(180deg);
 }
 

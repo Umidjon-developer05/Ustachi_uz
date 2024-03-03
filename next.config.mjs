@@ -2,5 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
 };
-
-export default nextConfig;
+const   i18n = {
+    defaultLocale: "en",
+    locales: ["en", "uz"],
+  }
+export default {
+  nextConfig,
+  i18n
+};

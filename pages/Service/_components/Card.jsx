@@ -1,39 +1,36 @@
-import { useTheme } from "next-themes";
 import React from "react";
 import { Button } from "../../../@/components/ui/button";
 import Link from "next/link";
 
 const Card = () => {
-  const { setTheme, resolvedTheme } = useTheme();
-
   return (
     <div>
-      <div class="card-section">
+      <div className="card-section">
         <div>
-          <h1 class="card-title"></h1>
+          <h1 className="card-title"></h1>
         </div>
 
-        <div class="flipping-cards">
-          <div class="profile-card first-profile-card">
+        <div className="flipping-cards">
+          <div className="profile-card first-profile-card">
             <div>
               <div className="profile-card-front profile-card-face flex flex-col items-end ">
                 <div>
                   <img
                     src="/user.png"
                     alt="profile-picture"
-                    class="profile-picture"
+                    className="profile-picture"
                   />
                 </div>
-                <div className=" rounded-lg h-[70px] mt-2 w-full flex justify-between">
+                <div className=" rounded-lg h-[70px] mt-2 w-full flex justify-between border shadow-lg">
                   <div>
                     <h1
-                      className={`' mx-2    font-Montserrat font-mono '`}
+                      className={`' mx-2  font-Montserrat font-mono '`}
                       style={{ fontSize: "23px" }}
                     >
                       Habibov Murod
                     </h1>
                     <p
-                      className=" mx-2 font-mono  "
+                      className=" mx-2 font-mono "
                       style={{ fontSize: "20px" }}
                     >
                       Asoschi
@@ -68,7 +65,7 @@ const Card = () => {
                       width="25"
                       height="25"
                       fill="blue"
-                      class="bi bi-telegram hover:opacity-40 "
+                      className="bi bi-telegram hover:opacity-40 "
                       viewBox="0 0 16 16"
                     >
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
@@ -80,7 +77,7 @@ const Card = () => {
                       width="25"
                       height="25"
                       fill="blue"
-                      class="bi bi-facebook  hover:opacity-40"
+                      className="bi bi-facebook  hover:opacity-40"
                       viewBox="0 0 16 16"
                     >
                       <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />

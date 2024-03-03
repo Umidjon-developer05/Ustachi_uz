@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "../../@/components/ui/button";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Input } from "../../@/components/ui/input";
 import { Textarea } from "../../@/components/ui/textarea";
 import React, { useState } from "react";
@@ -106,5 +107,11 @@ const Form = () => {
     </form>
   );
 };
-
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["Contact"])),
+    },
+  };
+}
 export default Form;

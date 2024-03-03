@@ -4,7 +4,6 @@ import { Button } from "../../@/components/ui/button";
 
 const Main = () => {
   const [main, setMain] = useState([]);
-
   useEffect(() => {
     const getAllMainPage = () => {
       GlobalsApi.getAllMain()
