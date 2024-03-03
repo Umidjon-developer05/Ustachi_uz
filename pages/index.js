@@ -6,8 +6,9 @@ export default function Home() {
     <div>
       <main>
         <Main />
+        
       </main>
-      
+
     </div>
   );
 }
