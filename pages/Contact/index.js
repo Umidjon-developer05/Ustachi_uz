@@ -52,7 +52,7 @@ const Form = () => {
 
   return (
     <form
-      action=""
+      
       onSubmit={handleSubmit}
       className="sm:w-[600px] mx-auto  mt-24 flex flex-col justify-center items-center h-[600px] "
     >
@@ -93,7 +93,7 @@ const Form = () => {
               t="1569683742680"
               viewBox="0 0 1024 1024"
               version="1.1"
-              class="Contact_sendIcon__7dE65"
+              className="Contact_sendIcon__7dE65"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
