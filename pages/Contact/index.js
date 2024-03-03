@@ -1,11 +1,12 @@
 "use client";
 import { Button } from "../../@/components/ui/button";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Input } from "../../@/components/ui/input";
 import { Textarea } from "../../@/components/ui/textarea";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import React, { useState } from "react";
 import { useToast } from "../../@/components/ui/use-toast";
-const Form = () => {
+const Contact = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [time, setTime] = useState("");
@@ -52,7 +53,7 @@ const Form = () => {
 
   return (
     <form
-      
+      action=""
       onSubmit={handleSubmit}
       className="sm:w-[600px] mx-auto  mt-24 flex flex-col justify-center items-center h-[600px] "
     >
@@ -110,8 +111,8 @@ const Form = () => {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["Contact"])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 }
-export default Form;
+export default Contact;

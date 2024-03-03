@@ -1,7 +1,9 @@
-import Main from "./Main/Main";
+import Main from "./Main";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home() {
+   
+
   return (
     <div>
       <main>

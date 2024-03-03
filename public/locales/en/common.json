@@ -1,7 +1,7 @@
 {
     "navbar":{
-      "title1": "Main",
-      "title2": "About",
-      "title4": "Contacts"
+        "title1":"Home",
+        "title2":"About",
+        "title3":"Contact"
     }
 }

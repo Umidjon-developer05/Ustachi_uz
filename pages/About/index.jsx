@@ -15,7 +15,7 @@ const About = () => {
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 mx-2 mb-2">
         <>
           {about.abouts?.map((item, index) => (
-            <div key={index} className="grid gap-2 about-item">
+            <div key={index} class="grid gap-2 about-item">
               <img
                 className="h-auto max-w-full rounded-lg cursor-pointer"
                 src={item?.imageAbout?.url}
@@ -28,6 +28,7 @@ const About = () => {
     </div>
   );
 };
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
