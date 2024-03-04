@@ -3,5 +3,10 @@
         "title1":"Home",
         "title2":"About",
         "title3":"Contact"
+    },
+    "main":{
+        "title":"Welcome to Ustachila site",
+        "desc":"We are very happy to see you",
+        "button":"contact us"
     }
 }

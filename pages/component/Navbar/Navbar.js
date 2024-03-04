@@ -22,7 +22,12 @@ const language = [
     country_code: "gb",
   },
   {
-    code: "uz", 
+    code: "ru",
+    name: "Russia",
+    country_code: "ru",
+  },
+  {
+    code: "uz",
     name: "Uzbekistan",
     country_code: "uz",
   },
@@ -40,14 +45,14 @@ const GlobeIcon = ({ width = 24, height = 24 }) => (
   </svg>
 );
 const Navbar = () => {
-  const [til,setTil] = useState('en') 
+  const [lang,setLang]= useState(false)
   const { user } = useUser();
   const { setTheme, resolvedTheme } = useTheme();
   const router = useRouter();
   const { t } = useTranslation();
-  function Onchang(p) {
-    setTil(p)
-  } 
+  function Language() {
+    setLang(!lang)
+  }
   return (
     <div>
       <nav className="bg-white dark:bg-gray-900 fixed w-full  top-0  z-20 start-0 border-b border-gray-200 shadow">
@@ -68,45 +73,40 @@ const Navbar = () => {
             <div className="relative inline-block text-left">
               <button
                 type="button"
-                className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2 text-sm font-semibold  shadow-sm ring-1 ring-inset "
                 id="menu-button"
                 aria-expanded="true"
                 aria-haspopup="true"
                 data-bs-toggle="dropdown"
+                onClick={() => Language()}
               >
                 <GlobeIcon />
               </button>
-              <ul className="dropdown-menu">
-                <div
-                  className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="menu-button"
-                  tabIndex="-1"
-                >
-                  {language?.map((item, index) => (
-                    <div key={index}>
-                      <Link
-                        href={router.pathname}
-                        locale={item?.code}
-                        onClick={() => Onchang(item?.code)}
-                      >
-                        <div className="py-1" role="none">
-                          <li>
-                            <button>
-                              <span
-                                className={` fi fi-${item.country_code} `}
-                              ></span>{" "}
-                              &nbsp;
-                              {item.name}
-                            </button>
-                          </li>
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-              </ul>
+              {lang && (
+                <ul className="dropdown-menu">
+                  <div
+                    className="absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md  shadow-lg ring-1 p-2 ring-opacity-5 focus:outline-none"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                    tabIndex="-1"
+                  >
+                    {language?.map((item, index) => (
+                      <div key={index}>
+                        <Link href={router.pathname} locale={item?.code} onClick={()=>setLang(false)} >
+                          <div className="py-1" role="none">
+                            <span
+                              className={`fi fi-${item.country_code}`}
+                            ></span>{" "}
+                            &nbsp;
+                            {item.name}
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
+                </ul>
+              )}
             </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild className="rounded-lg">
