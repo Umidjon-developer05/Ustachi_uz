@@ -1,4 +1,5 @@
 import { SignUp } from "@clerk/nextjs";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
  
 export default function Page() {
   return(
