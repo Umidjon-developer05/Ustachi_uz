@@ -3,7 +3,7 @@ import { Toaster } from "../@/components/ui/toaster";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="uz">
       <link
         rel="icon"
         href="/Home_logo-removebg-preview.png"
