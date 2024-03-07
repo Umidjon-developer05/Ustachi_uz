@@ -62,7 +62,7 @@ const Navbar = () => {
       <div>
         <nav className="bg-white dark:bg-gray-900 fixed w-full  top-0  z-20 start-0 border-b border-gray-200 shadow">
           <div className="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
-            <Link href={"/"} className="flex items-center ">
+            <Link href={"/"} className="flex flex-wrap items-center ">
               <Image
                 width={1000}
                 height={1000}
@@ -70,7 +70,7 @@ const Navbar = () => {
                 className="w-14 h-14 "
                 alt="Flowbite Logo"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center sm:text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Home
               </span>
             </Link>
