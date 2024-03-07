@@ -61,7 +61,7 @@ const Navbar = () => {
     <>
       <div>
         <nav className="bg-white dark:bg-gray-900 fixed w-full  top-0  z-20 start-0 border-b border-gray-200 shadow">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div className="max-w-screen-xl flex  items-center justify-between mx-auto p-4">
             <Link href={"/"} className="flex items-center ">
               <Image
                 width={1000}
