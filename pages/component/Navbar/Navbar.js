@@ -147,6 +147,7 @@ const Navbar = () => {
                   className={`' ${
                     resolvedTheme == "dark" ? " bg-slate-950 " : " bg-black "
                   } '`}
+                   afterSignOutUrl='/'
                 />
               ) : (
                 <Link href={"/sign-in"}>
