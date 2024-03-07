@@ -155,7 +155,7 @@ const Navbar = () => {
                     type="button"
                     className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none  focus:ring-blue-300 font-medium rounded-lg text-sm  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
-                    Get started
+                    SingIn
                   </Button>
                 </Link>
               )}
@@ -169,7 +169,7 @@ const Navbar = () => {
               >
                 {!menu ? (
                   <svg
-                    className="w-5 h-5"
+                    className="sm:w-5 sm:h-5"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -186,8 +186,7 @@ const Navbar = () => {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                   className="sm:w-5 sm:h-5"
                     fill="currentColor"
                     class="bi bi-x"
                     viewBox="0 0 16 16"
